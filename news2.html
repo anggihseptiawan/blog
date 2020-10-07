@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="main.css">
+
+	<title>Blog post artikel</title>
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<h1>Build a React sidebar navigation component</h1>
+			<div class="tags">
+				<span>#html</span>
+				<span>#javascript</span>
+				<span>#tutorial</span>
+			</div>
+			<div class="author">
+				<img class="float-left" src="assets/images/female.svg" alt="">
+				<span>Jane</span>
+				<small>Sep 8 2020 - 3 min read</small>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="container">
+			<article>
+				<div class="main-article">
+					<img src="assets/images/thumbnail2.jpg" alt="">
+					<p class="image_from">Image from <a href="https://unsplash.com/" target="blank">Unsplash</a></p>
+
+					<p>In this tutorial we’ll be building a slide-out sidebar navigation component. Traditionally this type of navigation was implemented on mobile devices but it’s becoming common practice to use them on desktop devices.</p>
+					<p>Create a pages folder in the src directory with home.js, services.js, and contact.js files. These are just placeholder files so we can navigate between the pages in our navigation.
+
+</p>
+					<p>Inside each of the files we’ll render some simple content so we can see when the page has changed. Be sure to replace the function name and text in each file to correspond with the filename</p>
+					<p>When the onClick is triggered we set the sidebar state to true which adds an active class. You’ll see later when CSS is applied that the active class shifts the position of the sidebar from offscreen to the left edge.</p>
+					<p>is the primary component of React Router that’s responsible for keeping the UI and the URL in sync. looks through all its children elements and renders the first one with a path matching the current URL.</p>
+					<p>First we’ll set the default position of the sidebar off-screen. Then when the active class is triggered it’s position changes to align on the left side of the browser. As the sidebar has a transition it’ll animate into position.</p>
+				</div>
+			</article>		
+		</div>
+	</main>
+
+	<footer>
+		<div class="container">
+			<div class="copyright">
+				<p>&copy; copyright 2020 <i class="fa fa-heart"></i> Guril Foundation</p>
+				<p>Theme inspired by <a href="https://dev.to/t/javascript">Dev.to</a></p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
